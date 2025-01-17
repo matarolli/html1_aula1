@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Primeira Página</title>
   </head>
   <body>
+    <!-- Cabeçalho -->
     <header>
       <h1>Meu Site</h1>
       <nav>
@@ -16,6 +19,9 @@
         </ul>
       </nav>
     </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Principal conteúdo -->
     <main>
       <section id="home">
         <h2>Bem-vindo</h2>
@@ -42,10 +48,27 @@
       <section id="contact">
         <h2>Contato</h2>
         <p>Entre em contato conosco pelo formulário abaixo.</p>
+        <!-- Formulario -->
+        <form action="#" method="post">
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="mensagem">Mensagem:</label><br />
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea
+          ><br /><br />
+
+          <button type="submit">Enviar</button>
+        </form>
+        <!-- fim do formulário -->
       </section>
     </main>
+    <!-- Fim do principal conteúdo -->
+    <!-- Inicio rodapé -->
     <footer>
-      <p>&copy; 2024 Meu Site Exemplo. Todos os direitos reservados.</p>
+      <p>&trade; 2024 Meu Site Exemplo. Todos os direitos reservados.</p>
       <nav>
         <ul>
           <li><a href="#home">Início</a></li>
@@ -54,5 +77,6 @@
         </ul>
       </nav>
     </footer>
+    <!-- fim do rodapé -->
   </body>
 </html>
